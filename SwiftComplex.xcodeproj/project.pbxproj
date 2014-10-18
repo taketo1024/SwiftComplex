@@ -14,6 +14,8 @@
 		2BEB564B19F235BF0069F44A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2BEB564A19F235BF0069F44A /* Images.xcassets */; };
 		2BEB564E19F235BF0069F44A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2BEB564C19F235BF0069F44A /* LaunchScreen.xib */; };
 		2BEB565A19F235BF0069F44A /* SwiftComplexTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BEB565919F235BF0069F44A /* SwiftComplexTests.swift */; };
+		2BEB566519F2368E0069F44A /* Complex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BEB566419F2368E0069F44A /* Complex.swift */; };
+		2BEB566719F236C90069F44A /* ComplexPlane.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BEB566619F236C90069F44A /* ComplexPlane.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +40,8 @@
 		2BEB565319F235BF0069F44A /* SwiftComplexTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftComplexTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BEB565819F235BF0069F44A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2BEB565919F235BF0069F44A /* SwiftComplexTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftComplexTests.swift; sourceTree = "<group>"; };
+		2BEB566419F2368E0069F44A /* Complex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Complex.swift; sourceTree = "<group>"; };
+		2BEB566619F236C90069F44A /* ComplexPlane.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComplexPlane.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +66,7 @@
 			isa = PBXGroup;
 			children = (
 				2BEB563E19F235BF0069F44A /* SwiftComplex */,
+				2BEB566319F236330069F44A /* Complex */,
 				2BEB565619F235BF0069F44A /* SwiftComplexTests */,
 				2BEB563D19F235BF0069F44A /* Products */,
 			);
@@ -79,12 +84,12 @@
 		2BEB563E19F235BF0069F44A /* SwiftComplex */ = {
 			isa = PBXGroup;
 			children = (
+				2BEB564C19F235BF0069F44A /* LaunchScreen.xib */,
+				2BEB564719F235BF0069F44A /* Main.storyboard */,
 				2BEB564119F235BF0069F44A /* AppDelegate.swift */,
 				2BEB564319F235BF0069F44A /* MasterViewController.swift */,
 				2BEB564519F235BF0069F44A /* DetailViewController.swift */,
-				2BEB564719F235BF0069F44A /* Main.storyboard */,
 				2BEB564A19F235BF0069F44A /* Images.xcassets */,
-				2BEB564C19F235BF0069F44A /* LaunchScreen.xib */,
 				2BEB563F19F235BF0069F44A /* Supporting Files */,
 			);
 			path = SwiftComplex;
@@ -113,6 +118,16 @@
 				2BEB565819F235BF0069F44A /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2BEB566319F236330069F44A /* Complex */ = {
+			isa = PBXGroup;
+			children = (
+				2BEB566419F2368E0069F44A /* Complex.swift */,
+				2BEB566619F236C90069F44A /* ComplexPlane.swift */,
+			);
+			name = Complex;
+			path = SwiftComplex;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -215,7 +230,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2BEB566519F2368E0069F44A /* Complex.swift in Sources */,
 				2BEB564619F235BF0069F44A /* DetailViewController.swift in Sources */,
+				2BEB566719F236C90069F44A /* ComplexPlane.swift in Sources */,
 				2BEB564419F235BF0069F44A /* MasterViewController.swift in Sources */,
 				2BEB564219F235BF0069F44A /* AppDelegate.swift in Sources */,
 			);
