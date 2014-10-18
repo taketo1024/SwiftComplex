@@ -22,12 +22,17 @@ class DetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        plane.scale = 2.0
+        plane.scale = 1.0
+        plane.pointSize = 10
         plane["1"] = (Complex(1), nil)
         plane["i"] = (i, nil)
         
         z = Complex(r: 2, θ: M_PI / 3)
         self.update()
+    }
+    
+    deinit {
+        timer?.invalidate()
     }
     
     func update() {
@@ -78,7 +83,7 @@ class DetailViewController: UIViewController {
     
     func timerFired() {
         if(!touched) {
-            z = Complex(r: abs(z), θ: arg(z) + M_PI / 100)
+            z = Complex(r: abs(z), θ: arg(z) + M_PI / 60)
             self.update()
         }
     }
