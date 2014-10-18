@@ -32,5 +32,25 @@ class DetailViewController: UIViewController {
         plane["w"] = (map?(z), UIColor.blueColor())
         plane.setNeedsDisplay()
     }
+    
+    override func touchesBegan(touches: NSSet, withEvent event: UIEvent) {
+        let touch = (touches.anyObject() as UITouch?)!
+        let point = touch.locationInView(plane)
+        
+        if (plane.pointInside(point, withEvent: nil)) {
+            z = plane.complexAtPoint(point)
+            self.update()
+        }
+    }
+    
+    override func touchesMoved(touches: NSSet, withEvent event: UIEvent) {
+        let touch = (touches.anyObject() as UITouch?)!
+        let point = touch.locationInView(plane)
+        
+        if (plane.pointInside(point, withEvent: nil)) {
+            z = plane.complexAtPoint(point)
+            self.update()
+        }
+    }
 }
 

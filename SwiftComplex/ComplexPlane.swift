@@ -9,6 +9,7 @@
 import UIKit
 
 class ComplexPlane : UIView {
+    var pointSize: CGFloat = 8.0
     var unit: CGFloat = 50.0
     var scale: CGFloat = 1.0
     var points: [String: Complex] = [:]
@@ -53,7 +54,7 @@ class ComplexPlane : UIView {
             
             // draw point
             CGContextSetFillColorWithColor(ctx, color.CGColor)
-            CGContextAddArc(ctx, point.x, point.y, 3, 0, CGFloat(2 * M_PI), 0)
+            CGContextAddArc(ctx, point.x, point.y, pointSize / 2, 0, CGFloat(2 * M_PI), 0)
             CGContextFillPath(ctx)
             
             // draw name
@@ -61,5 +62,13 @@ class ComplexPlane : UIView {
             let textPoint = CGPoint(x: point.x + 5, y: point.y)
             text.drawAtPoint(textPoint, withAttributes:[NSForegroundColorAttributeName: color])
         }
+    }
+    
+    func complexAtPoint(point: CGPoint) -> Complex {
+        let u = unit / scale
+        let centerX = self.bounds.width / 2
+        let centerY = self.bounds.height / 2
+        
+        return Complex(Double((point.x - centerX) / u), -Double((point.y - centerY) / u))
     }
 }
