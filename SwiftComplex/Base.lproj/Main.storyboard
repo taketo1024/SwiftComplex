@@ -81,16 +81,33 @@
                                     <constraint firstAttribute="height" constant="320" id="XZQ-jt-CHO"/>
                                 </constraints>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1rk-Tf-p8q">
+                                <rect key="frame" x="121" y="423" width="78" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="2g2-ps-fLY"/>
+                                    <constraint firstAttribute="width" constant="78" id="9t6-rT-Ub1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <state key="normal" title="Auto">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="autoButtonTapped" destination="Ah7-4n-0Wa" eventType="touchUpInside" id="cL8-Km-ZRy"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="Igv-6v-I3D" firstAttribute="leading" secondItem="MMQ-IT-qOo" secondAttribute="leading" constant="10" id="QUz-lE-LrG"/>
+                            <constraint firstItem="1rk-Tf-p8q" firstAttribute="top" secondItem="Igv-6v-I3D" secondAttribute="bottom" constant="29" id="Rtc-wO-4ec"/>
                             <constraint firstItem="Igv-6v-I3D" firstAttribute="top" secondItem="cIm-e0-J51" secondAttribute="bottom" constant="10" id="ZsG-Pl-Fnb"/>
                             <constraint firstAttribute="trailing" secondItem="Igv-6v-I3D" secondAttribute="trailing" constant="10" id="jl8-kj-N68"/>
+                            <constraint firstItem="1rk-Tf-p8q" firstAttribute="centerX" secondItem="Igv-6v-I3D" secondAttribute="centerX" id="nvr-58-zYI"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Detail" id="cra-N8-TIN"/>
                     <connections>
+                        <outlet property="autoButton" destination="1rk-Tf-p8q" id="Z4U-ww-bVd"/>
                         <outlet property="plane" destination="Igv-6v-I3D" id="g4M-Gn-smu"/>
                     </connections>
                 </viewController>
