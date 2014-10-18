@@ -10,36 +10,27 @@ import UIKit
 
 class DetailViewController: UIViewController {
 
-    @IBOutlet weak var detailDescriptionLabel: UILabel!
-
-
-    var detailItem: AnyObject? {
-        didSet {
-            // Update the view.
-            self.configureView()
-        }
-    }
-
-    func configureView() {
-        // Update the user interface for the detail item.
-        if let detail: AnyObject = self.detailItem {
-            if let label = self.detailDescriptionLabel {
-                label.text = detail.description
-            }
-        }
-    }
+    @IBOutlet weak var plane: ComplexPlane!
+    
+    var map: ((Complex) -> Complex)?
+    
+    private var z: Complex = 0
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-        self.configureView()
+        
+        plane.scale = 2.0
+        plane["1"] = (Complex(1), nil)
+        plane["i"] = (i, nil)
+        
+        z = Complex(r: 2, θ: M_PI / 3)
+        self.update()
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    func update() {
+        plane["z"] = (z, UIColor.redColor())
+        plane["w"] = (map?(z), UIColor.blueColor())
+        plane.setNeedsDisplay()
     }
-
-
 }
 
