@@ -2,6 +2,8 @@ SwiftComplex
 ============
 A simple project that shows you how to create *Complex Numbers* and *Complex Planes* using Swift.
 
+![screenshot](./doc/screenshot.png)
+
 # Complex
 
 ```swift
@@ -39,11 +41,6 @@ cplane["z"] = (z, UIColor.redColor())
 let w = z * z
 cplane["w"] = (w, UIColor.blueColor())
 ```
-
-# Interact with ComplexNumbers!
-
-![screenshot](./doc/screenshot.png)
-Run the sample and interact with ComplexNumbers! You can visually see how complex multiplication works.
 
 # Copyright and license
 
