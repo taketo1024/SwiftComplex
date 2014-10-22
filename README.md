@@ -1,16 +1,16 @@
 SwiftComplex
 ============
-A simple project that shows you how to create *Complex Numbers* and *Complex Planes* using Swift.
 
 ![screenshot](./doc/screenshot.png)
+
+A simple project that shows you how to create *Complex Numbers* and *Complex Planes* using Swift.
 
 # Complex
 
 ```swift
-let z = 3 + 2 * i
+let z =  3 + 2 * i
 let w = -2 - i
-
-z + w == 1 + i
+z + w ==  1 + i
 z * w == -4 - 7 * i
 ```
 
