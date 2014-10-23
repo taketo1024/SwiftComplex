@@ -3,7 +3,7 @@ SwiftComplex
 
 ![screenshot](./doc/screenshot.gif)
 
-A simple project that shows you how to create *Complex Numbers* and *Complex Planes* using Swift.
+*Interact with Complex Numbers!* This is a simple project which you can visually understand how complex multiplication works.
 
 # Complex
 
@@ -14,7 +14,7 @@ z + w ==  1 + i
 z * w == -4 - 7 * i
 ```
 
-You can also create a Complex with polar form.
+Also supports polar form.
 
 ```swift
 let z = Complex(r: 2, θ: M_PI / 4)
@@ -41,6 +41,8 @@ cplane["z"] = (z, UIColor.redColor())
 let w = z * z
 cplane["w"] = (w, UIColor.blueColor())
 ```
+
+[Here's the code](./SwiftComplex/ComplexPlane.swift).
 
 # Copyright and license
 
