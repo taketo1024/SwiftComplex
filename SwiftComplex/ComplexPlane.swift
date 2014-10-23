@@ -15,13 +15,12 @@ class ComplexPlane : UIView {
     var points: [String: Complex] = [:]
     var colors: [String: UIColor] = [:]
     
-    subscript(name: String) -> (Complex!, UIColor!) {
+    subscript(name: String) -> Complex? {
         get {
-            return (points[name], colors[name])
+            return points[name]
         }
         set(value) {
-            points[name] = value.0
-            colors[name] = value.1
+            points[name] = value
         }
     }
     

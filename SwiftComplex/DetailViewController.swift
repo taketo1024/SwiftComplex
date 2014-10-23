@@ -22,10 +22,10 @@ class DetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        plane.scale = 0.5
+        plane.scale = 1.0
         plane.pointSize = 10
-        plane["1"] = (Complex(1), nil)
-        plane["i"] = (i, nil)
+        plane["1"] = Complex(1)
+        plane["i"] = i
         
         z = Complex(r: 2, θ: M_PI / 3)
         self.update()
@@ -36,8 +36,10 @@ class DetailViewController: UIViewController {
     }
     
     func update() {
-        plane["z"] = (z, UIColor.redColor())
-        plane["w"] = (map?(z), UIColor.blueColor())
+        plane["z"] = z
+        plane.colors["z"] = UIColor.redColor()
+        plane["w"] = map?(z)
+        plane.colors["w"] = UIColor.blueColor()
         plane.setNeedsDisplay()
     }
     

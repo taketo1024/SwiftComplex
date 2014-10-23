@@ -30,16 +30,16 @@ arg(z) == M_PI / 4
 
 ```
 let cplane = ComplexPlane(frame: …)
-cplane.scale = 2.0
-
-cplane["1"] = (1, nil)
-cplane["i"] = (i, nil)
+cplane["1"] = Complex(1)
+cplane["i"] = i
 
 let z = Complex(r: 2, θ: M_PI / 3)
-cplane["z"] = (z, UIColor.redColor())
+cplane["z"] = z
+cplane.colors["z"] = UIColor.redColor()
 
 let w = z * z
-cplane["w"] = (w, UIColor.blueColor())
+cplane["w"] = w
+cplane.colors["w"] = UIColor.blueColor()
 ```
 
 [Here's the code](./SwiftComplex/ComplexPlane.swift).
