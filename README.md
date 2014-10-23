@@ -1,7 +1,7 @@
 SwiftComplex
 ============
 
-![screenshot](./doc/screenshot.png)
+![screenshot](./doc/screenshot.gif)
 
 A simple project that shows you how to create *Complex Numbers* and *Complex Planes* using Swift.
 

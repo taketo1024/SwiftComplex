@@ -22,7 +22,7 @@ class DetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        plane.scale = 1.0
+        plane.scale = 0.5
         plane.pointSize = 10
         plane["1"] = (Complex(1), nil)
         plane["i"] = (i, nil)
