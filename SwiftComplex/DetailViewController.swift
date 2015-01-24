@@ -24,7 +24,7 @@ class DetailViewController: UIViewController {
         
         plane.scale = 1.0
         plane.pointSize = 10
-        plane["1"] = Complex(1)
+        plane["1"] = 1
         plane["i"] = i
         
         z = Complex(r: 2, θ: M_PI / 3)

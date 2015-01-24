@@ -22,17 +22,19 @@ struct Complex: Equatable, IntegerLiteralConvertible, FloatLiteralConvertible {
         self.y = 0
     }
     
+    init(integerLiteral x: IntegerLiteralType) {
+        self.x = Double(x)
+        self.y = 0
+    }
+    
+    init(floatLiteral x: FloatLiteralType) {
+        self.x = x
+        self.y = 0
+    }
+    
     init(r: Double, θ: Double) {
         self.x = r * cos(θ)
         self.y = r * sin(θ)
-    }
-    
-    static func convertFromIntegerLiteral(value: IntegerLiteralType) -> Complex {
-        return Complex(Double(value))
-    }
-    
-    static func convertFromFloatLiteral(value: FloatLiteralType) -> Complex {
-        return Complex(value)
     }
 }
 
