@@ -16,6 +16,7 @@
 		2BEB565A19F235BF0069F44A /* SwiftComplexTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BEB565919F235BF0069F44A /* SwiftComplexTests.swift */; };
 		2BEB566519F2368E0069F44A /* Complex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BEB566419F2368E0069F44A /* Complex.swift */; };
 		2BEB566719F236C90069F44A /* ComplexPlane.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BEB566619F236C90069F44A /* ComplexPlane.swift */; };
+		DDD17A441AA98CC100E2EF04 /* ComplexSphereViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD17A431AA98CC100E2EF04 /* ComplexSphereViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +43,7 @@
 		2BEB565919F235BF0069F44A /* SwiftComplexTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftComplexTests.swift; sourceTree = "<group>"; };
 		2BEB566419F2368E0069F44A /* Complex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Complex.swift; sourceTree = "<group>"; };
 		2BEB566619F236C90069F44A /* ComplexPlane.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComplexPlane.swift; sourceTree = "<group>"; };
+		DDD17A431AA98CC100E2EF04 /* ComplexSphereViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComplexSphereViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +91,7 @@
 				2BEB564119F235BF0069F44A /* AppDelegate.swift */,
 				2BEB564319F235BF0069F44A /* MasterViewController.swift */,
 				2BEB564519F235BF0069F44A /* DetailViewController.swift */,
+				DDD17A431AA98CC100E2EF04 /* ComplexSphereViewController.swift */,
 				2BEB564A19F235BF0069F44A /* Images.xcassets */,
 				2BEB563F19F235BF0069F44A /* Supporting Files */,
 			);
@@ -230,6 +233,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DDD17A441AA98CC100E2EF04 /* ComplexSphereViewController.swift in Sources */,
 				2BEB566519F2368E0069F44A /* Complex.swift in Sources */,
 				2BEB564619F235BF0069F44A /* DetailViewController.swift in Sources */,
 				2BEB566719F236C90069F44A /* ComplexPlane.swift in Sources */,
@@ -428,6 +432,7 @@
 				2BEB565F19F235BF0069F44A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2BEB566019F235BF0069F44A /* Build configuration list for PBXNativeTarget "SwiftComplexTests" */ = {
 			isa = XCConfigurationList;
@@ -436,6 +441,7 @@
 				2BEB566219F235BF0069F44A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
