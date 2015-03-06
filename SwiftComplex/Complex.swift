@@ -75,7 +75,7 @@ func * (z: Complex, w: Complex) -> Complex {
 }
 
 func / (z: Complex, w: Complex) -> Complex {
-    let w_inv = Complex(w.x / (w.x * w.x + w.y * w.y), -w.y / (w.x * w.x + w.y * w.y))
+    let w_inv = (1 / (w.x * w.x + w.y * w.y) ) * Complex(w.x, -w.y)
     return z * w_inv
 }
 
