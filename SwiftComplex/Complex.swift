@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct Complex: Equatable, IntegerLiteralConvertible, FloatLiteralConvertible {
+struct Complex: Equatable, IntegerLiteralConvertible, FloatLiteralConvertible, Printable {
     let x: Double
     let y: Double
     
@@ -35,6 +35,13 @@ struct Complex: Equatable, IntegerLiteralConvertible, FloatLiteralConvertible {
     init(r: Double, θ: Double) {
         self.x = r * cos(θ)
         self.y = r * sin(θ)
+    }
+    
+    var description: String {
+        var output = "\(round(x * 100) / 10) "
+        output += (y >= 0 ? "+" : "-")
+        output += " \(round(abs(y) * 100) / 100)i"
+        return output
     }
 }
 

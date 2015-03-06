@@ -43,6 +43,13 @@ class MasterViewController: UITableViewController {
                 vc.title = titles[index];
                 vc.map = map(index)
             }
+        } else if segue.identifier == "showSphere" {
+            let vc = segue.destinationViewController as ComplexSphereViewController
+            if let indexPath = self.tableView.indexPathForSelectedRow() {
+                let index = indexPath.row
+                vc.title = titles[index];
+                vc.map = map(index)
+            }
         }
     }
 

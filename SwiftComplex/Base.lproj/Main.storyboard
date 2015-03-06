@@ -64,7 +64,7 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="Fck-Vt-6sD" kind="push" id="Y3k-Ft-dUe"/>
+                                    <segue destination="Fck-Vt-6sD" kind="push" identifier="showSphere" id="Y3k-Ft-dUe"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
