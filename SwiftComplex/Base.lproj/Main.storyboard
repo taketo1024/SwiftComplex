@@ -143,14 +143,14 @@
                         <viewControllerLayoutGuide type="top" id="acF-c9-AGX"/>
                         <viewControllerLayoutGuide type="bottom" id="00r-vL-aum"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="zbk-YO-gIJ" customClass="SCNView">
+                    <view key="view" contentMode="scaleToFill" id="zbk-YO-gIJ" customClass="RiemannSphere" customModule="SwiftComplex" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="yMX-hr-Ae4"/>
                     <connections>
-                        <outlet property="sceneView" destination="zbk-YO-gIJ" id="edG-RO-Okq"/>
+                        <outlet property="sphere" destination="zbk-YO-gIJ" id="y0t-2c-qTf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qLm-Fg-NNq" userLabel="First Responder" sceneMemberID="firstResponder"/>

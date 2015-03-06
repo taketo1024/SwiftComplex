@@ -16,6 +16,7 @@
 		2BEB565A19F235BF0069F44A /* SwiftComplexTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BEB565919F235BF0069F44A /* SwiftComplexTests.swift */; };
 		2BEB566519F2368E0069F44A /* Complex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BEB566419F2368E0069F44A /* Complex.swift */; };
 		2BEB566719F236C90069F44A /* ComplexPlane.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BEB566619F236C90069F44A /* ComplexPlane.swift */; };
+		DD138F5F1AA9A1AF00E39AB4 /* RiemannSphere.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD138F5E1AA9A1AF00E39AB4 /* RiemannSphere.swift */; };
 		DDD17A441AA98CC100E2EF04 /* ComplexSphereViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD17A431AA98CC100E2EF04 /* ComplexSphereViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -43,6 +44,7 @@
 		2BEB565919F235BF0069F44A /* SwiftComplexTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftComplexTests.swift; sourceTree = "<group>"; };
 		2BEB566419F2368E0069F44A /* Complex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Complex.swift; sourceTree = "<group>"; };
 		2BEB566619F236C90069F44A /* ComplexPlane.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComplexPlane.swift; sourceTree = "<group>"; };
+		DD138F5E1AA9A1AF00E39AB4 /* RiemannSphere.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RiemannSphere.swift; sourceTree = "<group>"; };
 		DDD17A431AA98CC100E2EF04 /* ComplexSphereViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComplexSphereViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -128,6 +130,7 @@
 			children = (
 				2BEB566419F2368E0069F44A /* Complex.swift */,
 				2BEB566619F236C90069F44A /* ComplexPlane.swift */,
+				DD138F5E1AA9A1AF00E39AB4 /* RiemannSphere.swift */,
 			);
 			name = Complex;
 			path = SwiftComplex;
@@ -238,6 +241,7 @@
 				2BEB564619F235BF0069F44A /* DetailViewController.swift in Sources */,
 				2BEB566719F236C90069F44A /* ComplexPlane.swift in Sources */,
 				2BEB564419F235BF0069F44A /* MasterViewController.swift in Sources */,
+				DD138F5F1AA9A1AF00E39AB4 /* RiemannSphere.swift in Sources */,
 				2BEB564219F235BF0069F44A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

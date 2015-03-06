@@ -26,7 +26,9 @@ class DetailViewController: UIViewController {
         plane.pointSize = 10
         plane["1"] = 1
         plane["i"] = i
-        
+        plane.colors["z"] = UIColor.redColor()
+        plane.colors["w"] = UIColor.blueColor()
+
         z = Complex(r: 2, θ: M_PI / 3)
         self.update()
     }
@@ -37,9 +39,7 @@ class DetailViewController: UIViewController {
     
     func update() {
         plane["z"] = z
-        plane.colors["z"] = UIColor.redColor()
         plane["w"] = map?(z)
-        plane.colors["w"] = UIColor.blueColor()
         plane.setNeedsDisplay()
     }
     
