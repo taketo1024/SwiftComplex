@@ -36,7 +36,7 @@ class ComplexSphereViewController: UIViewController {
     func update() {
         sphere["z"] = z
         sphere["w"] = map?(z)
-        sphere.plane.setNeedsDisplay()
+        sphere.update()
     }
     
     @IBAction func autoButtonTapped() {

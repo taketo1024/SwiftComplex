@@ -40,7 +40,7 @@ class DetailViewController: UIViewController {
     func update() {
         plane["z"] = z
         plane["w"] = map?(z)
-        plane.setNeedsDisplay()
+        plane.update()
     }
     
     override func touchesBegan(touches: NSSet, withEvent event: UIEvent) {

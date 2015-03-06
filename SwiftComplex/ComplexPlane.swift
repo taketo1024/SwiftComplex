@@ -24,6 +24,10 @@ class ComplexPlane : UIView {
         }
     }
     
+    func update() {
+        self.setNeedsDisplay()
+    }
+    
     override func drawRect(rect: CGRect) {
         let ctx = UIGraphicsGetCurrentContext()
         let centerX = self.bounds.width / 2

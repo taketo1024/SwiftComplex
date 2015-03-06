@@ -61,33 +61,22 @@ class MasterViewController: UITableViewController {
     
     override func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         switch(section) {
-        case 0: return "Basic"
-        case 1: return "Complex Plane"
+        case 0: return "Complex Plane"
+        case 1: return "Riemann Sphere"
         default: return nil
         }
     }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        switch(section) {
-        case 0: return titles.count
-        case 1: return 1
-        default: return 0
-        }
+        return titles.count
     }
 
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let reuseId = "Cell-Section\(indexPath.section)"
         let cell = tableView.dequeueReusableCellWithIdentifier(reuseId, forIndexPath: indexPath) as UITableViewCell
         
-        switch(indexPath.section) {
-        case 0:
-            let object = titles[indexPath.row] as String
-            cell.textLabel?.text = object
-        case 1:
-            cell.textLabel?.text = "test"
-        default:
-            break
-        }
+        let object = titles[indexPath.row] as String
+        cell.textLabel?.text = object
         
         return cell
     }
