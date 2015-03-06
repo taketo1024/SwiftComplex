@@ -17,6 +17,8 @@
 		2BEB566519F2368E0069F44A /* Complex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BEB566419F2368E0069F44A /* Complex.swift */; };
 		2BEB566719F236C90069F44A /* ComplexPlane.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BEB566619F236C90069F44A /* ComplexPlane.swift */; };
 		DD138F5F1AA9A1AF00E39AB4 /* RiemannSphere.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD138F5E1AA9A1AF00E39AB4 /* RiemannSphere.swift */; };
+		DD138F611AA9B13700E39AB4 /* RiemannSphere.vert in Resources */ = {isa = PBXBuildFile; fileRef = DD138F601AA9B13700E39AB4 /* RiemannSphere.vert */; };
+		DD138F631AA9B4EB00E39AB4 /* RiemannSphere.frag in Resources */ = {isa = PBXBuildFile; fileRef = DD138F621AA9B4EB00E39AB4 /* RiemannSphere.frag */; };
 		DDD17A441AA98CC100E2EF04 /* ComplexSphereViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD17A431AA98CC100E2EF04 /* ComplexSphereViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -45,6 +47,8 @@
 		2BEB566419F2368E0069F44A /* Complex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Complex.swift; sourceTree = "<group>"; };
 		2BEB566619F236C90069F44A /* ComplexPlane.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComplexPlane.swift; sourceTree = "<group>"; };
 		DD138F5E1AA9A1AF00E39AB4 /* RiemannSphere.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RiemannSphere.swift; sourceTree = "<group>"; };
+		DD138F601AA9B13700E39AB4 /* RiemannSphere.vert */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = RiemannSphere.vert; sourceTree = "<group>"; };
+		DD138F621AA9B4EB00E39AB4 /* RiemannSphere.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = RiemannSphere.frag; sourceTree = "<group>"; };
 		DDD17A431AA98CC100E2EF04 /* ComplexSphereViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComplexSphereViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -131,6 +135,8 @@
 				2BEB566419F2368E0069F44A /* Complex.swift */,
 				2BEB566619F236C90069F44A /* ComplexPlane.swift */,
 				DD138F5E1AA9A1AF00E39AB4 /* RiemannSphere.swift */,
+				DD138F601AA9B13700E39AB4 /* RiemannSphere.vert */,
+				DD138F621AA9B4EB00E39AB4 /* RiemannSphere.frag */,
 			);
 			name = Complex;
 			path = SwiftComplex;
@@ -218,7 +224,9 @@
 			files = (
 				2BEB564919F235BF0069F44A /* Main.storyboard in Resources */,
 				2BEB564E19F235BF0069F44A /* LaunchScreen.xib in Resources */,
+				DD138F631AA9B4EB00E39AB4 /* RiemannSphere.frag in Resources */,
 				2BEB564B19F235BF0069F44A /* Images.xcassets in Resources */,
+				DD138F611AA9B13700E39AB4 /* RiemannSphere.vert in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
