@@ -51,8 +51,11 @@ class RiemannSphere: SCNView {
         scene?.rootNode.addChildNode(cameraNode)
         
         let sphere = SCNSphere(radius: 1)
-        sphere.firstMaterial?.diffuse.contents = UIColor.whiteColor()
-        sphere.firstMaterial?.diffuse.contents = plane.layer
+        sphere.segmentCount = 120;
+        
+//        sphere.firstMaterial?.diffuse.contents = UIColor.whiteColor()
+//        sphere.firstMaterial?.diffuse.contents = plane.layer
+        sphere.firstMaterial?.diffuse.contents = UIImage(named: "test")
         
         func load(name: String) -> String {
             let url = NSBundle.mainBundle().URLForResource(name, withExtension: nil)
@@ -67,7 +70,6 @@ class RiemannSphere: SCNView {
         
         let sphereNode = SCNNode(geometry: sphere)
         sphereNode.position = SCNVector3(x: 0, y: 0, z: 0)
-        sphereNode.rotation = SCNVector4(x: 0, y: 1, z: 0, w: pi/2)
         scene?.rootNode.addChildNode(sphereNode)
     }
 }
